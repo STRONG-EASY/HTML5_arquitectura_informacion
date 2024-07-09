@@ -12,19 +12,30 @@
     <link rel="shortcut icon" href="IMG/buscando.png" type="image/x-icon" />
   </head>
 
-  <body>
-    <img
-      src="IMG/simplicidad.jpg"
-      alt="definicion"
-      style="width: auto; height: auto"
-    />
+    <img src="IMG/tecnologia.png" alt="Logo de mi página" width="100" height="120" align="right"/>
+
+    <br>
+    <details>
+      <summary>MENU</summary>
+      <hr>
+      <ul>
+        <li><a href="#">Publicar</a></li>
+        <hr>
+        <li><a href="#">Concursos</a></li>
+        <hr>
+        <li><a href="#">Recursos</a></li>
+        <hr>
+        <li><a href="#">Herramientas</a></li>
+        <hr>
+      </ul>
+    </details>
 
     <header>
-      <h1>Receta Html sin CSS</h1>
+      <h1>BIENVENIDOS</h1>
       <aside>¿Te gustara? Para gustos los colores...</aside>
     </header>
 
-    <h2>Pero...¿y que opinara mi ordenador sobre ella?</h2>
+    <h2>Nuestra Historia</h2>
 
     <p>
       En un mundo donde la tecnología y la informacion nos rodea
@@ -139,32 +150,50 @@
       them. You son-of-a-bitch.
     </p>
 
-    <blockquote cite="link">"cita."<br /></blockquote>
+    <div class="container mt-5">
+      <h2 class="text-center mb-5">FORMULARIO DE CONTACTO</h2>
+      <form class="needs-validation">
+          <label class="form-label" for="i_nombre">Nombre *</label>
+          <input class="form-control" type="text" id="i_nombre" required>
+          
 
-    <!-- yes, I know...wanna fight about it? -->
-    <script>
-      ;(function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r
-        ;(i[r] =
-          i[r] ||
-          function () {
-            ;(i[r].q = i[r].q || []).push(arguments)
-          }),
-          (i[r].l = 1 * new Date())
-        ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-        a.async = 1
-        a.src = g
-        m.parentNode.insertBefore(a, m)
-      })(
-        window,
-        document,
-        'script',
-        '//www.google-analytics.com/analytics.js',
-        'ga'
-      )
+          
+          <label class="form-label" for="i_correo">Correo Electronico *</label>
+          <input class="form-control" type="email" id="i_correo" required>
+          
 
-      ga('create', 'UA-45956659-1', 'xxxxxx')
-      ga('send', 'pageview')
-    </script>
+          <label class="form-label" for="asunto">Asunto *</label>
+          <select class="form-select" id="asunto">
+
+            <option>Saludos</option>
+            <option>Propuesta</option>
+            <option>Pregunta</option>
+            <option>Queja</option>
+          </select>
+       
+          
+
+          <label class="form-label" for="mensaje">Mensaje *</label>
+          <textarea class="form-control" id="mensaje" cols="50" rows="1" required></textarea>
+
+          <div class="form check mt-3">
+            <input class="form-check-input" type="checkbox" id="term" required>
+            <label class="form-check-label" for="term">
+
+              Acepto los <a href="#">Terminos y Condiciones</a>
+              
+            </label>
+          </div>
+
+          <br>
+
+          <div class="text-center">
+            <input class="btn btn-sucess" type="submit" value="ENVIAR">
+            <input class="btn btn-danger" type="reset" value="CANCELAR">
+          </div>
+
+      </form>
+    </div>
+  </div>
   </body>
 </html>
